@@ -6,19 +6,33 @@ import org.junit.Test;
 public class AddressTest {
     
     @Test
-    public void testInputAddress() {
+    public void testinputaddress() {
         String postCode = "10520";
         String lineOne = "595/2 P.P.ONE Apartment";
         String lineTwo = "soi.Chalongkrung 1/5";
         String lineThree = "Ladkrabang ,Bangkok";
         String lineFour = "Thailand";
-        String StreetName = "Chalongkrung";
+        String streetName = "Chalongkrung";
         String buildingNumber = "595/2";
         String buildingName = "P.P. One Apartment";
         String cityName = "Bangkok";
         String countryName = "Thailand";
+        String citySubDivisionName = "Ladkrabang";
+        String countrySubDivision = "Bangkok";
         
-        Address address = new Address();
+        Address address = new Address(postCode,
+                                       lineOne,
+                                       lineTwo,
+                                       lineThree,
+                                       lineFour,
+                                       streetName,
+                                       buildingNumber,
+                                       buildingName,
+                                       cityName,
+                                       countryName,
+                                       citySubDivisionName,
+                                       countrySubDivision);
+        
         address.setBuildingName(buildingName);
         address.setBuildingNumber(buildingNumber);
         address.setCityName(cityName);
@@ -28,7 +42,10 @@ public class AddressTest {
         address.setLineThree(lineThree);
         address.setLineFour(lineFour);
         address.setPostCode(postCode);
-        address.setStreetName(StreetName);
+        address.setStreetName(streetName);
+        address.setCitySubDivisionName(citySubDivisionName);
+        address.setCountrySubDivision(countrySubDivision);
+        
         
         Assert.assertEquals(address.getBuildingName(), buildingName);
         Assert.assertEquals(address.getBuildingNumber(), buildingNumber);
@@ -39,6 +56,8 @@ public class AddressTest {
         Assert.assertEquals(address.getLineThree(), lineThree);
         Assert.assertEquals(address.getLineFour(), lineFour);
         Assert.assertEquals(address.getPostCode(), postCode);
-        Assert.assertEquals(address.getStreetName(), StreetName);
+        Assert.assertEquals(address.getStreetName(), streetName);
+        Assert.assertEquals(address.getCitySubDivisionName(), citySubDivisionName);
+        Assert.assertEquals(address.getCountrySubDivision(), countrySubDivision);
     }  
 }

@@ -12,6 +12,36 @@ public class Address {
     private String countryName;
     private String buildingName;
     private String buildingNumber;
+    private String citySubDivisionName;
+    private String countrySubDivision;
+    
+
+    public Address(String postCode, 
+                    String lineOne, 
+                    String lineTwo, 
+                    String lineThree, 
+                    String lineFour, 
+                    String streetName, 
+                    String cityName, 
+                    String countryName, 
+                    String buildingName, 
+                    String buildingNumber,
+                    String citySubDivisionName,
+                    String countrySubDivision) {
+        
+        this.postCode = postCode;
+        this.lineOne = lineOne;
+        this.lineTwo = lineTwo;
+        this.lineThree = lineThree;
+        this.lineFour = lineFour;
+        this.streetName = streetName;
+        this.cityName = cityName;
+        this.countryName = countryName;
+        this.buildingName = buildingName;
+        this.buildingNumber = buildingNumber;
+        this.citySubDivisionName = citySubDivisionName;
+        this.countrySubDivision = countrySubDivision;
+    }
 
     public String getPostCode() {
         return postCode;
@@ -92,4 +122,20 @@ public class Address {
     public void setBuildingNumber(String buildingNumber) {
         this.buildingNumber = buildingNumber;
     }
+
+    public String getCitySubDivisionName() {
+        return citySubDivisionName;
+    }
+
+    public void setCitySubDivisionName(String citySubDivisionName) {
+        this.citySubDivisionName = citySubDivisionName;
+    }
+
+    public String getCountrySubDivision() {
+        return countrySubDivision;
+    }
+
+    public void setCountrySubDivision(String countrySubDivision) {
+        this.countrySubDivision = countrySubDivision;
+    }   
 }
