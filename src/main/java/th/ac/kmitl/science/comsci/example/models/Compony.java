@@ -1,7 +1,7 @@
 package th.ac.kmitl.science.comsci.example.models;
 
 public class Company {
-    
+   
     private String Id;
     private String Name;
     private String GlobolId;
@@ -24,11 +24,11 @@ public class Company {
     }
     public void setGlobolId(String GlobolId) {
         this.GlobolId = GlobolId;
-    }
+    } 
     public String getTaxId() {
         return taxId;
     }
     public void setTaxId(String taxId) {
         this.taxId = taxId;
     }
-   }
+}
