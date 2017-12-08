@@ -31,5 +31,4 @@ public class Company {
     public void setTaxId(String taxId) {
         this.taxId = taxId;
     }
-
    }

@@ -23,8 +23,7 @@ public class CompanyTest {
         Assert.assertEquals(company.getId(), Id);
         Assert.assertEquals(company.getName(), Name);
 	Assert.assertEquals(company.getGlobolId(), GlobolId);
-	Assert.assertEquals(company.getTaxId(), TaxId);
+        Assert.assertEquals(company.getTaxId(), TaxId);
         Assert.assertEquals(company.getGlobolId(), GlobolId);
-    }
-    
+    } 
 }
