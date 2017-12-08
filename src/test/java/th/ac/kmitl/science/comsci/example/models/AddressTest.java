@@ -6,7 +6,7 @@ import org.junit.Test;
 public class AddressTest {
     
     @Test
-    public void TestInputAddress() {
+    public void testInputAddress() {
         String postCode = "10520";
         String lineOne = "595/2 P.P.ONE Apartment";
         String lineTwo = "soi.Chalongkrung 1/5";
