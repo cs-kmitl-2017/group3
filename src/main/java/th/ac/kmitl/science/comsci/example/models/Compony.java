@@ -10,31 +10,24 @@ public class Company {
     public String getId() {
         return Id;
     }
-    
     public void setId(String Id) {
         this.Id = Id;
     }
-
     public String getName() {
         return Name;
     }
-
     public void setName(String Name) {
         this.Name = Name;
     }
-
     public String getGlobolId() {
         return GlobolId;
     }
-
     public void setGlobolId(String GlobolId) {
         this.GlobolId = GlobolId;
     }
-
     public String getTaxId() {
         return taxId;
     }
-
     public void setTaxId(String taxId) {
         this.taxId = taxId;
     }
