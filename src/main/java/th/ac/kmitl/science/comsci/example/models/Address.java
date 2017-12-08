@@ -7,11 +7,41 @@ public class Address {
     private String lineTwo;
     private String lineThree;
     private String lineFour;
-    private String streetName;
-    private String cityName;
+    private String lineFive;
     private String countryName;
     private String buildingName;
-    private String buildingNumber;
+    private CodeMapping countrySubDivision;
+    private CodeMapping citySubDivision;
+    private CodeMapping cityName;
+    
+    public Address() {
+        
+    };
+    
+    public Address(String postCode, 
+                    String lineOne, 
+                    String lineTwo, 
+                    String lineThree, 
+                    String lineFour, 
+                    String lineFive,
+                    CodeMapping cityName, 
+                    String countryName, 
+                    String buildingName, 
+                    CodeMapping countrySubDivision,
+                    CodeMapping citySubDivision) {
+        
+        this.postCode = postCode;
+        this.lineOne = lineOne;
+        this.lineTwo = lineTwo;
+        this.lineThree = lineThree;
+        this.lineFour = lineFour;
+        this.lineFive = lineFive;
+        this.cityName = cityName;
+        this.countryName = countryName;
+        this.buildingName = buildingName;
+        this.citySubDivision = citySubDivision;
+        this.countrySubDivision = countrySubDivision;
+    }
 
     public String getPostCode() {
         return postCode;
@@ -53,19 +83,19 @@ public class Address {
         this.lineFour = lineFour;
     }
 
-    public String getStreetName() {
-        return streetName;
+    public String getLineFive() {
+        return lineFive;
     }
 
-    public void setStreetName(String streetName) {
-        this.streetName = streetName;
+    public void setLineFive(String streetName) {
+        this.lineFive = lineFive;
     }
 
-    public String getCityName() {
+    public CodeMapping getCityName() {
         return cityName;
     }
-
-    public void setCityName(String cityName) {
+    
+    public void setCityName(CodeMapping cityName) {
         this.cityName = cityName;
     }
 
@@ -84,12 +114,20 @@ public class Address {
     public void setBuildingName(String buildingName) {
         this.buildingName = buildingName;
     } 
-     
-    public String getBuildingNumber() {
-        return buildingNumber;
+
+    public CodeMapping getCitySubDivision() {
+        return citySubDivision;
+    }
+  
+    public void setCitySubDivision(CodeMapping citySubDivision) {
+        this.citySubDivision = citySubDivision;
     }
 
-    public void setBuildingNumber(String buildingNumber) {
-        this.buildingNumber = buildingNumber;
+    public CodeMapping getCountrySubDivision() {
+        return countrySubDivision;
     }
+
+    public void setCountrySubDivision(CodeMapping countrySubDivision) {
+        this.countrySubDivision = countrySubDivision;
+    }   
 }
