@@ -2,33 +2,33 @@ package th.ac.kmitl.science.comsci.example.models;
 
 public class Company {
    
-    private String Id;
-    private String Name;
-    private String GlobolId;
+    private String id;
+    private String name;
+    private String globolId;
     private String taxId;
     
     public String getId() {
-        return Id;
+        return id;
     }
     
-    public void setId(String Id) {
-        this.Id = Id;
+    public void setId(String id) {
+        this.id = id;
     }
     
     public String getName() {
-        return Name;
+        return name;
     }
     
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setName(String name) {
+        this.name = name;
     }
     
     public String getGlobolId() {
-        return GlobolId;
+        return globolId;
     }
     
-    public void setGlobolId(String GlobolId) {
-        this.GlobolId = GlobolId;
+    public void setGlobolId(String globolId) {
+        this.globolId = globolId;
     } 
     
     public String getTaxId() {

@@ -7,20 +7,20 @@ public class CompanyTest {
     
     @Test
     public void TestInputCompany() {
-        String Id = "ID58050231";
-        String Name = "Pattharachat";
-        String GlobolId = "IDG58050231";
-        String TaxId = "TAX00058050231";
+        String id = "ID58050231";
+        String name = "Pattharachat";
+        String globolId = "IDG58050231";
+        String taxId = "TAX00058050231";
         
         Company company = new Company();
-        company.setId(Id);
-        company.setName(Name);
-        company.setGlobolId(GlobolId);
-        company.setTaxId(TaxId);
+        company.setId(id);
+        company.setName(name);
+        company.setGlobolId(globolId);
+        company.setTaxId(taxId);
    
-        Assert.assertEquals(company.getId(), Id);
-        Assert.assertEquals(company.getName(), Name);
-        Assert.assertEquals(company.getGlobolId(), GlobolId);
-        Assert.assertEquals(company.getGlobolId(), GlobolId);
+        Assert.assertEquals(company.getId(), id);
+        Assert.assertEquals(company.getName(), name);
+        Assert.assertEquals(company.getGlobolId(), globolId);
+        Assert.assertEquals(company.getGlobolId(), globolId);
     }
 }
