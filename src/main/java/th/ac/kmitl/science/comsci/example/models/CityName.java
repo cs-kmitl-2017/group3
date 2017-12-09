@@ -45,7 +45,7 @@ public class CityName implements Mapping {
             case "Bang Bon"             : return 38;
             case "Phra Nakhon"          : return 39;
             case "Dusit"                : return 40;
-            default : throw new Exception();
+            default : throw new IllegalArgumentException("MappingNotFoundException");
         }
     }
 }
