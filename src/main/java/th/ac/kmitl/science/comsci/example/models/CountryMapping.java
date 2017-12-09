@@ -1,6 +1,6 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-import th.ac.kmitl.science.comsci.example.models.Mapping;
+import th.ac.kmitl.science.comsci.example.utilities.Mapping;
 
 public class CountryMapping implements Mapping {
     

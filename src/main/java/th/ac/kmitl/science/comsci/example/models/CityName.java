@@ -1,5 +1,7 @@
 package th.ac.kmitl.science.comsci.example.models;
 
+import th.ac.kmitl.science.comsci.example.utilities.Mapping;
+
 public class CityName implements Mapping {
     
     @Override
