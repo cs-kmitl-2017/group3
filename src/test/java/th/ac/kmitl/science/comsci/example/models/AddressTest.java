@@ -6,13 +6,13 @@ import org.junit.Test;
 public class AddressTest {
     
     @Test
-    public void testinputaddress() {
+    public void testInputAddress() {
         String postCode = "10520";
         String lineOne = "595/2 P.P.ONE Apartment";
         String lineTwo = "soi.Chalongkrung 1/5";
         String lineThree = "Ladkrabang ,Bangkok";
         String lineFour = "Thailand";
-        String streetName = "Chalongkrung";
+        String lineFive = "Chalongkrung";
         String buildingNumber = "595/2";
         String buildingName = "P.P. One Apartment";
         String cityName = "Bangkok";
@@ -25,7 +25,7 @@ public class AddressTest {
                                        lineTwo,
                                        lineThree,
                                        lineFour,
-                                       streetName,
+                                       lineFive,
                                        buildingNumber,
                                        buildingName,
                                        cityName,
@@ -42,7 +42,7 @@ public class AddressTest {
         address.setLineThree(lineThree);
         address.setLineFour(lineFour);
         address.setPostCode(postCode);
-        address.setStreetName(streetName);
+        address.setLineFive(lineFive);
         address.setCitySubDivisionName(citySubDivisionName);
         address.setCountrySubDivision(countrySubDivision);
         
@@ -56,7 +56,7 @@ public class AddressTest {
         Assert.assertEquals(address.getLineThree(), lineThree);
         Assert.assertEquals(address.getLineFour(), lineFour);
         Assert.assertEquals(address.getPostCode(), postCode);
-        Assert.assertEquals(address.getStreetName(), streetName);
+        Assert.assertEquals(address.getLineFive(), lineFive);
         Assert.assertEquals(address.getCitySubDivisionName(), citySubDivisionName);
         Assert.assertEquals(address.getCountrySubDivision(), countrySubDivision);
     }  

@@ -7,7 +7,7 @@ public class Address {
     private String lineTwo;
     private String lineThree;
     private String lineFour;
-    private String streetName;
+    private String lineFive;
     private String cityName;
     private String countryName;
     private String buildingName;
@@ -21,7 +21,7 @@ public class Address {
                     String lineTwo, 
                     String lineThree, 
                     String lineFour, 
-                    String streetName, 
+                    String lineFive, 
                     String cityName, 
                     String countryName, 
                     String buildingName, 
@@ -34,7 +34,7 @@ public class Address {
         this.lineTwo = lineTwo;
         this.lineThree = lineThree;
         this.lineFour = lineFour;
-        this.streetName = streetName;
+        this.lineFive = lineFive;
         this.cityName = cityName;
         this.countryName = countryName;
         this.buildingName = buildingName;
@@ -83,12 +83,12 @@ public class Address {
         this.lineFour = lineFour;
     }
 
-    public String getStreetName() {
-        return streetName;
+    public String getLineFive() {
+        return lineFive;
     }
 
-    public void setStreetName(String streetName) {
-        this.streetName = streetName;
+    public void setLineFive(String streetName) {
+        this.lineFive = lineFive;
     }
 
     public String getCityName() {
