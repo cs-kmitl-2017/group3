@@ -1,59 +1,28 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-import org.junit.Assert;
 import org.junit.Test;
+import static org.junit.Assert.*;
+import static th.ac.kmitl.science.comsci.example.models.AddressMock.*;
+import static th.ac.kmitl.science.comsci.example.models.CodeMappingMock.cityName;
+import static th.ac.kmitl.science.comsci.example.models.CodeMappingMock.citySubDivision;
+import static th.ac.kmitl.science.comsci.example.models.CodeMappingMock.countrySubDivision;
 
 public class AddressTest {
     
     @Test
-    public void testInputAddress() {
-        String postCode = "10520";
-        String lineOne = "595/2 P.P.ONE Apartment";
-        String lineTwo = "soi.Chalongkrung 1/5";
-        String lineThree = "Ladkrabang ,Bangkok";
-        String lineFour = "Thailand";
-        String lineFive = "Chalongkrung";
-        String buildingName = "595/2 P.P. One Apartment";
-        String cityName = "Bangkok";
-        String countryName = "Thailand";
-        String citySubDivision = "Ladkrabang";
-        String countrySubDivision = "Bangkok";
-        
-        Address address = new Address(postCode,
-                                       lineOne,
-                                       lineTwo,
-                                       lineThree,
-                                       lineFour,
-                                       lineFive,
-                                       buildingName,
-                                       cityName,
-                                       countryName,
-                                       citySubDivision,
-                                       countrySubDivision);
-        
-        address.setBuildingName(buildingName);
-        address.setCityName(cityName);
-        address.setCountryName(countryName);
-        address.setLineOne(lineOne);
-        address.setLineTwo(lineTwo);
-        address.setLineThree(lineThree);
-        address.setLineFour(lineFour);
-        address.setPostCode(postCode);
-        address.setLineFive(lineFive);
-        address.setCitySubDivision(citySubDivision);
-        address.setCountrySubDivision(countrySubDivision);
-        
-        
-        Assert.assertEquals(address.getBuildingName(), buildingName);
-        Assert.assertEquals(address.getCityName(), cityName);
-        Assert.assertEquals(address.getCountryName(), countryName);
-        Assert.assertEquals(address.getLineOne(), lineOne);
-        Assert.assertEquals(address.getLineTwo(), lineTwo);
-        Assert.assertEquals(address.getLineThree(), lineThree);
-        Assert.assertEquals(address.getLineFour(), lineFour);
-        Assert.assertEquals(address.getPostCode(), postCode);
-        Assert.assertEquals(address.getLineFive(), lineFive);
-        Assert.assertEquals(address.getCitySubDivision(), citySubDivision);
-        Assert.assertEquals(address.getCountrySubDivision(), countrySubDivision);
+    public void testAddress() {
+        Address address = address();
+ 
+        assertEquals(postCode, address.getPostCode());
+        assertEquals(buildingName, address.getBuildingName());
+        assertEquals(lineOne, address.getLineOne());
+        assertEquals(lineTwo, address.getLineTwo());
+        assertEquals(lineThree, address.getLineThree());
+        assertEquals(lineFour, address.getLineFour());
+        assertEquals(lineFive, address.getLineFive());
+        assertEquals(cityName, address.getCityName());
+        assertEquals(citySubDivision, address.getCitySubDivision());
+        assertEquals(countryName, address.getCountryName());
+        assertEquals(countrySubDivision, address.getCountrySubDivision());
     }  
 }
