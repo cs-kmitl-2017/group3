@@ -2,15 +2,14 @@ package th.ac.kmitl.science.comsci.example.models;
 
 import org.junit.Test;
 
-public class CityNameMappingTest {
+public class CityNameMappingTest { 
     
     private CityName cityMapping = new CityName();
     private Address mock = new Address();
     public  String city = "Ratchathewi";
     
-    
     @Test
-    public void testByName(){
+    public void testByName() throws Exception {
         assert(cityMapping.mapper("Lat Phrao") == 26);
         assert(cityMapping.mapper("Sai Mai") == 30);
         assert(cityMapping.mapper("Bang Bon") == 38);
@@ -22,9 +21,8 @@ public class CityNameMappingTest {
     }
     
     @Test
-    public void testByMock(){
+    public void testByMock() throws Exception {
         mock.setCityName(city);
         assert(cityMapping.mapper(mock.getCityName()) == 25);
     }
-    
 }

@@ -3,7 +3,7 @@ package th.ac.kmitl.science.comsci.example.models;
 public class CityName implements Mapping {
     
     @Override
-    public int mapper(String name){
+    public int mapper(String name) throws Exception {
         switch(name){
             case "Samphanthawong"       : return 1;
             case "Phaya Thai"           : return 2;
@@ -45,8 +45,7 @@ public class CityName implements Mapping {
             case "Bang Bon"             : return 38;
             case "Phra Nakhon"          : return 39;
             case "Dusit"                : return 40;
-            default : return 0;
+            default : throw new Exception();
         }
     }
-    
 }
