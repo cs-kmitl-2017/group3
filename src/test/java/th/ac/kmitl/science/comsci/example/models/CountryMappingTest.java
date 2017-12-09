@@ -1,7 +1,6 @@
 package th.ac.kmitl.science.comsci.example.models;
 
 import org.junit.Test;
-import th.ac.kmitl.science.comsci.example.utilities.CountryMapping;
 
 public class CountryMappingTest {
     

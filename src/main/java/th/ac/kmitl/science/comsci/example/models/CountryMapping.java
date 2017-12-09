@@ -1,4 +1,4 @@
-package th.ac.kmitl.science.comsci.example.utilities;
+package th.ac.kmitl.science.comsci.example.models;
 
 import th.ac.kmitl.science.comsci.example.models.Mapping;
 
