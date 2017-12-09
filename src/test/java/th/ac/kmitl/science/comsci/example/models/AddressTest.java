@@ -4,10 +4,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import static th.ac.kmitl.science.comsci.example.models.AddressMock.*;
 import static th.ac.kmitl.science.comsci.example.models.CodeMappingMock.cityName;
-import static th.ac.kmitl.science.comsci.example.models.CodeMappingMock.citySubDivision;
-import static th.ac.kmitl.science.comsci.example.models.CodeMappingMock.countrySubDivision;
 
 public class AddressTest {
+
+    private Object citySubDivision;
+    private Object countrySubDivision;
     
     @Test
     public void testAddress() {
@@ -24,5 +25,5 @@ public class AddressTest {
         assertEquals(citySubDivision, address.getCitySubDivision());
         assertEquals(countryName, address.getCountryName());
         assertEquals(countrySubDivision, address.getCountrySubDivision());
-    }  
+    }     
 }

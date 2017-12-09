@@ -129,5 +129,5 @@ public class Address {
 
     public void setCountrySubDivision(CodeMapping countrySubDivision) {
         this.countrySubDivision = countrySubDivision;
-    }   
+    }    
 }

@@ -8,9 +8,9 @@ public class MappingTest {
     
     @Test
     public void createMappingTest() {
-        CodeMapping codeMapping1 = citySubDivision();
+        CodeMapping citySubDivisionMapping = citySubDivision();
         
-        assertEquals(cityId, codeMapping1.getId());
-        assertEquals(cityName, codeMapping1.getName());
+        assertEquals(cityId, citySubDivisionMapping.getId());
+        assertEquals(cityName, citySubDivisionMapping.getName());
     } 
 }

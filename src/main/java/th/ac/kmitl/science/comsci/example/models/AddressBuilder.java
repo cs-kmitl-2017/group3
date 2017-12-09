@@ -1,5 +1,7 @@
 package th.ac.kmitl.science.comsci.example.models;
 
+import java.util.Objects;
+
 public class AddressBuilder {
     
     private String postCode;
@@ -64,6 +66,11 @@ public class AddressBuilder {
         return this;
     }
     
+    public AddressBuilder withBuildingName(String buildingName) {
+        this.buildingName =buildingName;
+        return this;
+    }
+    
         public Address createAddress() {
             return new Address(postCode,
                                 lineOne,
@@ -76,5 +83,53 @@ public class AddressBuilder {
                                 buildingName,
                                 citySubDivision,
                                 countrySubDivision);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final AddressBuilder other = (AddressBuilder) obj;
+        if (!Objects.equals(this.postCode, other.postCode)) {
+            return false;
+        }
+        if (!Objects.equals(this.lineOne, other.lineOne)) {
+            return false;
+        }
+        if (!Objects.equals(this.lineTwo, other.lineTwo)) {
+            return false;
+        }
+        if (!Objects.equals(this.lineThree, other.lineThree)) {
+            return false;
+        }
+        if (!Objects.equals(this.lineFour, other.lineFour)) {
+            return false;
+        }
+        if (!Objects.equals(this.lineFive, other.lineFive)) {
+            return false;
+        }
+        if (!Objects.equals(this.countryName, other.countryName)) {
+            return false;
+        }
+        if (!Objects.equals(this.buildingName, other.buildingName)) {
+            return false;
+        }
+        if (!Objects.equals(this.cityName, other.cityName)) {
+            return false;
+        }
+        if (!Objects.equals(this.citySubDivision, other.citySubDivision)) {
+            return false;
+        }
+        if (!Objects.equals(this.countrySubDivision, other.countrySubDivision)) {
+            return false;
+        }
+        return true;
     }
 }
