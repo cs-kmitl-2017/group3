@@ -44,7 +44,7 @@ public class CodeMapping {
         if (!(obj instanceof CodeMapping)) 
             return false;
         
-        final CodeMapping other =(CodeMapping) obj;
+        final CodeMapping other = (CodeMapping) obj;
         
         return this.id == other.id && this.name.equals(other.name);
     }   
