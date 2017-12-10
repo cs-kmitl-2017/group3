@@ -31,30 +31,21 @@ public class CodeMapping {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 59 * hash + this.id;
-        hash = 59 * hash + Objects.hashCode(this.name);
+        hash = 47 * hash + this.id;
+        hash = 47 * hash + Objects.hashCode(this.name);
         return hash;
     }
-    
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if (obj == null) {
+        if (!(obj instanceof CodeMapping)) 
             return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final CodeMapping other = (CodeMapping) obj;
-        if (this.id != other.id) {
-            return false;
-        }
-        if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
-        return true;
-    }
-    
+        
+        final CodeMapping other =(CodeMapping) obj;
+        
+        return this.id == other.id && this.name.equals(other.name);
+    }   
 }

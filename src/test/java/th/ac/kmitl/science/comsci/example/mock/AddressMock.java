@@ -30,4 +30,17 @@ public class AddressMock {
                 .createAddress();
         return address;
     }
+    
+    public static Address addressWithSomeAttribute() {
+         Address address = new AddressBuilder()
+                 .withPostCode(postCode)
+                 .withBuildingName(buildingName)
+                 .withLineOne(lineOne)
+                 .withLineTwo(lineTwo)
+                 .withLineFive(lineFive)
+                 .withCityName(cityName)
+                 .withCitySubDivision(citySubDivision)
+                 .createAddress();
+         return address;
+     }
 }
